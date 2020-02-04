@@ -1,6 +1,6 @@
 let path = require('path')
 module.exports = {
-    entry : "./src/main.js",//arquivo de entrada
+    entry : ["@babel/polyfill", "./src/main.js"],//arquivo de entrada
     output : {//arquivo de saída
         path: path.join(__dirname, '/public') ,
         filename : "bundle.js",
